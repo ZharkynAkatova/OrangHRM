@@ -44,7 +44,7 @@ public class ScreenshotListener implements ITestListener {
      */
     @Override
     public void onStart(ITestContext context) {
-        System.out.println("Привет из onStart");
+
     }
 
     /**
@@ -54,7 +54,7 @@ public class ScreenshotListener implements ITestListener {
      */
     @Override
     public void onTestStart(ITestResult result) {
-        System.out.println("Привет из onTestStart");
+
     }
 
     /**
@@ -64,7 +64,7 @@ public class ScreenshotListener implements ITestListener {
      */
     @Override
     public void onTestSuccess(ITestResult result) {
-        System.out.println("Привет из onTestSuccess");
+
     }
 
     /**

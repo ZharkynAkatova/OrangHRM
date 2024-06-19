@@ -41,8 +41,8 @@ public class BaseTest {
         iframeHelper = new IframeHelper(driver);
     }
 
-//    @AfterClass(alwaysRun = true)
-//    public void tearDown()  {
-//        DriverManager.closedriver();
-//    }
+    @AfterClass(alwaysRun = true)
+    public void tearDown()  {
+        DriverManager.closedriver();
+    }
 }
