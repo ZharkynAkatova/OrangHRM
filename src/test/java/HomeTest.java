@@ -6,13 +6,13 @@ import org.testng.annotations.Test;
 
 public class HomeTest extends BaseTest {
 
-    @Test
+    @Test(description ="", groups = {"Smoke", "UI", "1", "OrangHRM"})
     public void HomeTest1 () {
         orangeHRMPages.getHomePage().switchToTab(Endpoints.TIME);
         orangeHRMPages.getAdminPage().movingToElementByDropdownList1("Timesheets", "My Timesheets");
     }
 
-    @Test (description ="", groups = {"UI", "2", "OrangHRM"})
+    @Test (description ="", groups = {"Smoke", "UI", "2", "OrangHRM"})
     @Tag("UI")
     @Story("")
     @Step
@@ -21,7 +21,7 @@ public class HomeTest extends BaseTest {
         orangeHRMPages.getAdminPage().movingToElementByDropdownList2("Configuration", "Localization");
     }
 
-    @Test
+    @Test (description ="", groups = {"Smoke", "UI", "3", "OrangHRM"})
     public void HomeTest3 () {
         orangeHRMPages.getHomePage().switchToTab(Endpoints.ADMIN);
         orangeHRMPages.getAdminPage().movingToElementByDropdownList2("Nationalities");
