@@ -16,10 +16,11 @@ public class ChromeWebDriver {
         WebDriverManager.chromedriver().setup();
 
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--remote-allow-origins=*");
-        options.addArguments("--disable-extensions");
-        options.addArguments("--window-size=1920,1080");
         options.addArguments("--no-sandbox");
+        options.addArguments("--disable-dev-shm-usage");
+        options.addArguments("--disable-gpu");
+        options.addArguments("--remote-allow-origins=*");
+        options.addArguments("--window-size=1920,1080");
         options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
 
         if (Boolean.parseBoolean(getValue("headless"))) {
