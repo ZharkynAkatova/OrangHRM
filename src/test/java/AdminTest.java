@@ -1,5 +1,8 @@
 import com.winter24.enums.Endpoints;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+
+@Listeners(com.winter24.listener.ScreenshotListener.class)
 
 public class AdminTest extends BaseTest{
 

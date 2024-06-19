@@ -5,6 +5,9 @@ import com.winter24.utils.RandomUtils;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Listeners;
+
+@Listeners(com.winter24.listener.ScreenshotListener.class)
 
 public class BaseTest {
 
