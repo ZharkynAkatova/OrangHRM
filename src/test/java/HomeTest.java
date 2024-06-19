@@ -5,7 +5,7 @@ import io.qameta.allure.testng.Tag;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-@Listeners(com.winter24.listener.ScreenshotListener.class)
+//@Listeners(com.winter24.listener.ScreenshotListener.class)
 
 public class HomeTest extends BaseTest {
 
